@@ -2172,3 +2172,395 @@ footer p {
         align-items: flex-start;
     }
 }
+
+/* ===================================================
+   SKILLS — PILL CLOUD ROWS
+=================================================== */
+.skills-cloud-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(15, 23, 42, 0.5);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(99, 102, 241, 0.12);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.4rem 2.5rem;
+    border-bottom: 1px solid rgba(99, 102, 241, 0.08);
+    transition: background 0.3s ease;
+    flex-wrap: wrap;
+}
+
+.skill-row:last-child {
+    border-bottom: none;
+}
+
+.skill-row:hover {
+    background: rgba(99, 102, 241, 0.04);
+}
+
+.skill-row-label {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: rgba(248, 250, 252, 0.45);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-width: 130px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    flex: 1;
+}
+
+/* Pill base */
+.spill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.42rem 1.05rem;
+    border-radius: 50px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: default;
+    transition: all 0.25s ease;
+    border: 1px solid transparent;
+}
+
+.spill:hover {
+    transform: translateY(-2px);
+}
+
+/* Pill variants */
+.spill-primary {
+    background: rgba(99, 102, 241, 0.15);
+    border-color: rgba(99, 102, 241, 0.35);
+    color: #a5b4fc;
+}
+
+.spill-primary:hover {
+    background: rgba(99, 102, 241, 0.28);
+    border-color: rgba(99, 102, 241, 0.6);
+    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.25);
+}
+
+.spill-secondary {
+    background: rgba(236, 72, 153, 0.1);
+    border-color: rgba(236, 72, 153, 0.28);
+    color: #f9a8d4;
+}
+
+.spill-secondary:hover {
+    background: rgba(236, 72, 153, 0.22);
+    border-color: rgba(236, 72, 153, 0.5);
+    box-shadow: 0 4px 16px rgba(236, 72, 153, 0.2);
+}
+
+.spill-accent {
+    background: rgba(6, 182, 212, 0.1);
+    border-color: rgba(6, 182, 212, 0.28);
+    color: #67e8f9;
+}
+
+.spill-accent:hover {
+    background: rgba(6, 182, 212, 0.22);
+    border-color: rgba(6, 182, 212, 0.5);
+    box-shadow: 0 4px 16px rgba(6, 182, 212, 0.18);
+}
+
+.spill-muted {
+    background: rgba(248, 250, 252, 0.05);
+    border-color: rgba(248, 250, 252, 0.1);
+    color: rgba(248, 250, 252, 0.55);
+}
+
+.spill-muted:hover {
+    background: rgba(248, 250, 252, 0.1);
+    border-color: rgba(248, 250, 252, 0.2);
+    color: rgba(248, 250, 252, 0.85);
+}
+
+/* ===================================================
+   CONTACT — CTA PANEL
+=================================================== */
+#contact {
+    padding: 8rem 5%;
+}
+
+.contact-cta-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(99, 102, 241, 0.15);
+    border-radius: 32px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Decorative gradient blob */
+.contact-cta-wrap::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.25), transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.contact-cta-wrap::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
+    width: 240px;
+    height: 240px;
+    background: radial-gradient(circle, rgba(236, 72, 153, 0.2), transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.contact-cta-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Left col */
+.contact-cta-left {
+    padding: 4rem 3.5rem;
+    border-right: 1px solid rgba(99, 102, 241, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.contact-cta-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.contact-cta-sub {
+    font-size: 1.05rem;
+    color: rgba(248, 250, 252, 0.62);
+    line-height: 1.75;
+    max-width: 420px;
+}
+
+.contact-location {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    color: rgba(248, 250, 252, 0.5);
+    margin-top: 0.5rem;
+}
+
+.contact-location i {
+    color: var(--primary);
+}
+
+/* Right col */
+.contact-cta-right {
+    padding: 4rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+/* Action cards */
+.contact-action-card {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.4rem 1.8rem;
+    background: rgba(99, 102, 241, 0.06);
+    border: 1px solid rgba(99, 102, 241, 0.15);
+    border-radius: 18px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-action-card:hover {
+    background: rgba(99, 102, 241, 0.14);
+    border-color: rgba(99, 102, 241, 0.45);
+    transform: translateX(6px);
+    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.2);
+}
+
+.cac-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+}
+
+.cac-icon.phone {
+    background: linear-gradient(135deg, var(--secondary), #f97316);
+}
+
+.cac-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.cac-label {
+    font-size: 0.8rem;
+    color: rgba(248, 250, 252, 0.45);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.cac-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--light);
+    margin-top: 0.15rem;
+}
+
+.cac-arrow {
+    color: var(--primary);
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-action-card:hover .cac-arrow {
+    transform: translateX(4px);
+}
+
+/* Social row */
+.contact-socials {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 0.6rem;
+}
+
+.csocial {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1.3rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.csocial.linkedin {
+    background: rgba(10, 102, 194, 0.15);
+    border: 1px solid rgba(10, 102, 194, 0.35);
+    color: #60a5fa;
+}
+
+.csocial.linkedin:hover {
+    background: rgba(10, 102, 194, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(10, 102, 194, 0.25);
+}
+
+.csocial.github {
+    background: rgba(248, 250, 252, 0.07);
+    border: 1px solid rgba(248, 250, 252, 0.15);
+    color: rgba(248, 250, 252, 0.8);
+}
+
+.csocial.github:hover {
+    background: rgba(248, 250, 252, 0.14);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(248, 250, 252, 0.08);
+}
+
+.csocial.resume {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border: none;
+    color: white;
+    box-shadow: 0 4px 18px rgba(99, 102, 241, 0.4);
+}
+
+.csocial.resume:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(99, 102, 241, 0.55);
+}
+
+/* Contact responsive */
+@media (max-width: 900px) {
+    .contact-cta-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-cta-left {
+        border-right: none;
+        border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+        padding: 3rem 2.5rem 2rem;
+    }
+
+    .contact-cta-right {
+        padding: 2rem 2.5rem 3rem;
+    }
+
+    .contact-cta-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .skill-row {
+        padding: 1.2rem 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+
+    .skill-row-label {
+        min-width: auto;
+    }
+
+    .contact-cta-left,
+    .contact-cta-right {
+        padding: 2rem 1.5rem;
+    }
+
+    .contact-cta-title {
+        font-size: 1.9rem;
+    }
+
+    .contact-action-card {
+        padding: 1.1rem 1.2rem;
+    }
+}
