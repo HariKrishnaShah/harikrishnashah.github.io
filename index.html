@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hari Shah — Full Stack Engineer</title>
-    <meta name="description" content="Hari Krishna Shah — Full Stack Software Engineer. Architected GIS platform serving 25+ municipalities, Gold Medalist at VIT, pursuing M.Tech at NIT Rourkela.">
+    <meta name="description"
+        content="Hari Krishna Shah — Full Stack Software Engineer. Architected GIS platform serving 25+ municipalities, Gold Medalist at VIT, pursuing M.Tech at NIT Rourkela.">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="./css.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="scroll-progress"></div>
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
-    
+
     <div class="bg-grid"></div>
     <div class="gradient-orb orb-1"></div>
     <div class="gradient-orb orb-2"></div>
@@ -30,583 +33,599 @@
         </ul>
     </nav>
 
-   <section class="hero" id="home">
-    <div class="hero-container">
-        <div class="hero-content">
-            <div class="status-badge">
-                <span class="status-dot"></span>
-                Open to Full-Time Roles · M.Tech @ NIT Rourkela
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    Open to Full-Time Roles · M.Tech @ NIT Rourkela
+                </div>
+
+                <h1>
+                    I Build Systems<br>
+                    <span class="gradient-text">That Actually Ship.</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    I'm <strong>Hari Shah</strong> — Full Stack Engineer who architected
+                    <strong>Palika GIS</strong>, a production platform now powering
+                    <strong>25+ municipalities</strong> across Nepal and generating <strong>₹2+ Crore</strong> in its
+                    first year.
+                    From real-time emergency response systems to 100K+ response survey pipelines —
+                    I engineer solutions that scale, perform, and ship.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Municipalities Served</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">₹2+ Cr</span>
+                        <span class="stat-label">Revenue Generated, Year One</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">9.72</span>
+                        <span class="stat-label">GPA · Gold Medalist, VIT</span>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="downloadCV()">
+                        <i class="fas fa-download"></i> Download Resume
+                    </button>
+                    <a href="#projects" class="btn btn-secondary">See My Work <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
-            
-            <h1>
-                I Build Systems<br>
-                <span class="gradient-text">That Actually Ship.</span>
-            </h1>
-            
-            <p class="hero-subtitle">
-                I'm <strong>Hari Shah</strong> — Full Stack Engineer who architected
-                <strong>Palika GIS</strong>, a production platform now powering 
-                <strong>25+ municipalities</strong> across Nepal and generating <strong>₹2+ Crore</strong> in its first year. 
-                From real-time emergency response systems to 100K+ response survey pipelines — 
-                I engineer solutions that scale, perform, and ship.
+
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <div class="profile-ring ring-1"></div>
+                    <div class="profile-ring ring-2"></div>
+
+                    <div class="profile-image-wrapper">
+                        <img src="images/pp.png" alt="Hari Krishna Shah" class="profile-image"
+                            onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:100%; height:100%; display:flex; align-items:center; justify-content:center; font-size:8rem; background:linear-gradient(135deg, var(--primary), var(--secondary));\'>💻</div>'">
+                    </div>
+
+                    <div class="floating-card card-1">
+                        <i class="fas fa-server"></i>
+                        <h4>System Design</h4>
+                        <p>Enterprise-grade & Built to Last</p>
+                    </div>
+
+                    <div class="floating-card card-2">
+                        <i class="fas fa-database"></i>
+                        <h4>Full Stack Dev</h4>
+                        <p>Next.js · PostgreSQL · Node.js</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS — BENTO GRID ===== -->
+    <section id="projects">
+        <div class="section-header reveal">
+            <span class="section-label">Portfolio</span>
+            <h2 class="section-title">What I've Built</h2>
+            <p class="section-description">
+                Production systems serving real users — not demos or side projects
             </p>
-
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">25+</span>
-                    <span class="stat-label">Municipalities Served</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">₹2+ Cr</span>
-                    <span class="stat-label">Revenue Generated, Year One</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">9.72</span>
-                    <span class="stat-label">GPA · Gold Medalist, VIT</span>
-                </div>
-            </div>
-
-            <div class="cta-buttons">
-                <button class="btn btn-primary" onclick="downloadCV()">
-                    <i class="fas fa-download"></i> Download Resume
-                </button>
-                <a href="#projects" class="btn btn-secondary">See My Work <i class="fas fa-arrow-right"></i></a>
-            </div>
         </div>
 
-        <div class="hero-visual">
-            <div class="profile-container">
-                <div class="profile-ring ring-1"></div>
-                <div class="profile-ring ring-2"></div>
-                
-                <div class="profile-image-wrapper">
-                    <img src="images/pp.png" alt="Hari Krishna Shah" class="profile-image" 
-                    onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:100%; height:100%; display:flex; align-items:center; justify-content:center; font-size:8rem; background:linear-gradient(135deg, var(--primary), var(--secondary));\'>💻</div>'">
-                </div>
+        <div class="bento-grid">
 
-                <div class="floating-card card-1">
-                    <i class="fas fa-server"></i>
-                    <h4>System Design</h4>
-                    <p>Enterprise-grade & Built to Last</p>
-                </div>
-
-                <div class="floating-card card-2">
-                    <i class="fas fa-database"></i>
-                    <h4>Full Stack Dev</h4>
-                    <p>Next.js · PostgreSQL · Node.js</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-  <!-- ===== PROJECTS — BENTO GRID ===== -->
-  <section id="projects">
-    <div class="section-header reveal">
-        <span class="section-label">Portfolio</span>
-        <h2 class="section-title">What I've Built</h2>
-        <p class="section-description">
-            Production systems serving real users — not demos or side projects
-        </p>
-    </div>
-
-    <div class="bento-grid">
-
-        <!-- FEATURED: Palika GIS -->
-        <div class="bento-card bento-featured reveal">
-            <div class="bento-image-wrap">
-                <div class="bento-gallery-main">
-                    <div class="bento-gallery-image active"><img src="images/palikagis1.png" alt="Palika GIS Dashboard"></div>
-                    <div class="bento-gallery-image"><img src="images/palikagis2.png" alt="Palika GIS Map View"></div>
-                    <div class="bento-gallery-image"><img src="images/palikagis3.png" alt="Palika GIS Emergency System"></div>
-                </div>
-                <div class="bento-gallery-dots">
-                    <span class="bdot active" onclick="bentoSwitch(this,0)"></span>
-                    <span class="bdot" onclick="bentoSwitch(this,1)"></span>
-                    <span class="bdot" onclick="bentoSwitch(this,2)"></span>
-                </div>
-                <div class="bento-badge">FLAGSHIP PRODUCT</div>
-            </div>
-            <div class="bento-body">
-                <div class="bento-meta">
-                    <span class="bento-num">01</span>
-                    <span class="bento-live-dot"></span>
-                    <span class="bento-status">Live · 25+ Municipalities</span>
-                </div>
-                <h3 class="bento-title">Palika GIS Platform</h3>
-                <p class="bento-desc">
-                    Enterprise GIS platform I architected from scratch. Serves 25+ municipalities 
-                    across Nepal, powers real-time emergency dispatch via Socket.io, 
-                    algorithmic house numbering, road infrastructure mapping, 
-                    and has processed 100K+ digital survey responses.
-                    Generated ₹2+ Crore in year one.
-                </p>
-                <div class="bento-highlights">
-                    <span><i class="fas fa-bolt"></i> Real-time Emergency System</span>
-                    <span><i class="fas fa-map-marked-alt"></i> PostGIS Spatial Analytics</span>
-                    <span><i class="fas fa-chart-line"></i> 100K+ Survey Responses</span>
-                </div>
-                <div class="bento-tech">
-                    <span>React</span><span>Node.js</span><span>PostgreSQL + PostGIS</span><span>Socket.io</span><span>Leaflet.js</span>
-                </div>
-                <a href="https://www.palikagis.com" target="_blank" class="bento-link">
-                    View Live Platform <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-        </div>
-
-        <!-- Tetra Labs -->
-        <div class="bento-card bento-half reveal">
-            <div class="bento-image-wrap short">
-                <div class="bento-gallery-main">
-                    <div class="bento-gallery-image active"><img src="images/tetralabs1.png" alt="Tetra Labs Dashboard"></div>
-                    <div class="bento-gallery-image"><img src="images/tetralabs2.png" alt="Tetra Labs Report View"></div>
-                </div>
-                <div class="bento-gallery-dots">
-                    <span class="bdot active" onclick="bentoSwitch(this,0)"></span>
-                    <span class="bdot" onclick="bentoSwitch(this,1)"></span>
-                </div>
-                <div class="bento-badge secondary">SaaS PLATFORM</div>
-            </div>
-            <div class="bento-body">
-                <div class="bento-meta">
-                    <span class="bento-num">02</span>
-                    <span class="bento-live-dot"></span>
-                    <span class="bento-status">Live</span>
-                </div>
-                <h3 class="bento-title">Tetra Labs</h3>
-                <p class="bento-desc">
-                    Civil lab SaaS: automated workflow from test request → lab entry → report generation → 
-                    stakeholder download portal, with full RBAC and GraphQL APIs.
-                </p>
-                <div class="bento-tech">
-                    <span>Next.js</span><span>TypeScript</span><span>GraphQL</span><span>PostgreSQL</span>
-                </div>
-                <a href="https://tetralabs.diginirmaan.com.np" target="_blank" class="bento-link">
-                    View Platform <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-        </div>
-
-        <!-- Municipal Platform -->
-        <div class="bento-card bento-half reveal">
-            <div class="bento-image-wrap short">
-                <div class="bento-gallery-main">
-                    <div class="bento-gallery-image active"><img src="images/municipal1.png" alt="Municipal Platform"></div>
-                </div>
-                <div class="bento-badge accent">MULTI-TENANT</div>
-            </div>
-            <div class="bento-body">
-                <div class="bento-meta">
-                    <span class="bento-num">03</span>
-                    <span class="bento-live-dot"></span>
-                    <span class="bento-status">Live · Multiple Municipalities</span>
-                </div>
-                <h3 class="bento-title">Municipal Web Platform</h3>
-                <p class="bento-desc">
-                    Modular, multi-tenant platform adopted by multiple municipalities — 
-                    content management, events, employee directories, independently configurable per client.
-                </p>
-                <div class="bento-tech">
-                    <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
-                </div>
-                <a href="https://lalitpur.palikagis.com" target="_blank" class="bento-link">
-                    View Live <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-        </div>
-
-        <!-- Diginirmaan Website -->
-        <div class="bento-card bento-wide reveal">
-            <div class="bento-image-wrap side">
-                <div class="bento-gallery-main">
-                    <div class="bento-gallery-image active"><img src="images/diginirmaan1.png" alt="Diginirmaan Website"></div>
-                </div>
-                <div class="bento-badge accent">COMPANY WEBSITE</div>
-            </div>
-            <div class="bento-body">
-                <div class="bento-meta">
-                    <span class="bento-num">04</span>
-                    <span class="bento-live-dot"></span>
-                    <span class="bento-status">Live</span>
-                </div>
-                <h3 class="bento-title">Diginirmaan Official Website</h3>
-                <p class="bento-desc">
-                    Company's flagship digital presence — designed and built from scratch. 
-                    Showcases the full product portfolio, client testimonials, and services. 
-                    Optimized for SEO and performance with Next.js and Tailwind CSS.
-                </p>
-                <div class="bento-tech">
-                    <span>React</span><span>Next.js</span><span>Tailwind CSS</span>
-                </div>
-                <a href="https://www.diginirmaan.com.np" target="_blank" class="bento-link">
-                    Visit Site <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section id="experience">
-    <div class="section-header reveal">
-        <span class="section-label">Career Journey</span>
-        <h2 class="section-title">Work Experience</h2>
-        <p class="section-description">
-            Building production systems that move the needle — from real-time emergency dispatch to enterprise SaaS
-        </p>
-    </div>
-
-    <div class="experience-container">
-        <div class="experience-timeline">
-            <!-- Experience 1 -->
-            <div class="experience-item reveal">
-                <span class="experience-period">June 2024 – Present</span>
-                <h3 class="experience-title">Lead Full Stack Developer</h3>
-                <div class="experience-company">Diginirman</div>
-                <div class="experience-location">
-                    <i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal
-                </div>
-                <ul class="experience-achievements">
-                    <li>Architected <strong>Palika GIS</strong> (palikagis.com) from the ground up — now deployed across 25+ municipalities and generating ₹2+ Crore in year one revenue</li>
-                    <li>Engineered a real-time Emergency Management System using Socket.io — live GPS coordinates, severity triage, and media uploads enabling immediate municipal response</li>
-                    <li>Built a Digital Survey pipeline with live logging and batch processing for 100K+ responses, featuring a WebSocket download system and auto Dropbox backup with monitoring</li>
-                    <li>Developed a House Numbering System using proximity algorithms to auto-generate metric number plates from municipal road networks, visualized on the GIS interface</li>
-                    <li>Implemented PostGIS spatial filters, database caching for computed stats, and a collaborative land-zone recommendation engine with multi-party live commenting</li>
-                    <li>Designed and developed the <strong>Diginirmaan Official Website</strong> — establishing the company's digital presence and showcasing the full product portfolio</li>
-                </ul>
-            </div>
-
-            <!-- Experience 2 -->
-            <div class="experience-item reveal">
-                <span class="experience-period">May 2024 – June 2024</span>
-                <h3 class="experience-title">Full Stack Developer</h3>
-                <div class="experience-company">Information Care</div>
-                <div class="experience-location">
-                    <i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal
-                </div>
-                <ul class="experience-achievements">
-                    <li>Delivered production-ready RESTful APIs and GraphQL schemas using TypeScript, PostgreSQL, and TypeORM for enterprise-grade applications</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== EDUCATION ===== -->
-<section id="education">
-    <div class="section-header reveal">
-        <span class="section-label">Academics</span>
-        <h2 class="section-title">Education</h2>
-        <p class="section-description">
-            Top-ranked institutions · Gold Medal · 9.72 GPA
-        </p>
-    </div>
-
-    <div class="education-container">
-        <!-- NIT Rourkela -->
-        <div class="education-card reveal">
-            <div class="education-image-wrap">
-                <img src="images/nit_rourkela.png" alt="National Institute of Technology, Rourkela" class="edu-college-img">
-                <div class="edu-overlay"></div>
-                <div class="edu-badge-wrap">
-                    <span class="edu-badge">NIT Rourkela</span>
-                </div>
-            </div>
-            <div class="education-content">
-                <div class="education-flag">
-                    <span class="edu-degree-label">POST GRADUATE</span>
-                </div>
-                <h3 class="education-degree">M.Tech in Computer Science &amp; Engineering</h3>
-                <div class="education-institution">National Institute of Technology, Rourkela</div>
-                <div class="education-info">
-                    <span class="education-year">
-                        <i class="fas fa-calendar-alt"></i> Aug 2025 – Aug 2027
-                    </span>
-                    <span class="education-location">
-                        <i class="fas fa-map-marker-alt"></i> Rourkela, Odisha
-                    </span>
-                </div>
-                <p class="education-detail">One of India's premier engineering institutions (NIT system). Pursuing advanced studies in CS with focus on algorithms, system design, and scalable architectures.</p>
-            </div>
-        </div>
-
-        <!-- VIT Vellore -->
-        <div class="education-card reveal">
-            <div class="education-image-wrap">
-                <img src="images/vit_vellore.png" alt="Vellore Institute of Technology" class="edu-college-img">
-                <div class="edu-overlay"></div>
-                <div class="edu-badge-wrap">
-                    <span class="edu-badge">VIT Vellore</span>
-                </div>
-            </div>
-            <div class="education-content">
-                <div class="education-flag">
-                    <span class="edu-degree-label">UNDER GRADUATE</span>
-                    <span class="edu-gold-badge"><i class="fas fa-medal"></i> Gold Medalist</span>
-                </div>
-                <h3 class="education-degree">B.Sc. in Computer Science</h3>
-                <div class="education-institution">Vellore Institute of Technology</div>
-                <div class="education-info">
-                    <span class="education-year">
-                        <i class="fas fa-calendar-alt"></i> Aug 2021 – May 2024
-                    </span>
-                    <span class="education-location">
-                        <i class="fas fa-map-marker-alt"></i> Vellore, Tamil Nadu
-                    </span>
-                </div>
-                <div class="edu-gpa-wrap">
-                    <div class="edu-gpa">
-                        <span class="gpa-num">9.72</span>
-                        <span class="gpa-label">/ 10 GPA</span>
+            <!-- FEATURED: Palika GIS -->
+            <div class="bento-card bento-featured reveal">
+                <div class="bento-image-wrap">
+                    <div class="bento-gallery-main">
+                        <div class="bento-gallery-image active"><img src="images/palikagis1.png"
+                                alt="Palika GIS Dashboard"></div>
+                        <div class="bento-gallery-image"><img src="images/palikagis2.png" alt="Palika GIS Map View">
+                        </div>
+                        <div class="bento-gallery-image"><img src="images/palikagis3.png"
+                                alt="Palika GIS Emergency System"></div>
                     </div>
-                    <p class="edu-gpa-note">Graduated with highest distinction &amp; Gold Medal</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== CERTIFICATIONS ===== -->
-<section id="certifications">
-    <div class="section-header reveal">
-        <span class="section-label">Credentials</span>
-        <h2 class="section-title">Certifications</h2>
-        <p class="section-description">
-            Verified professional training — 225+ hours of hands-on coursework
-        </p>
-    </div>
-
-    <div class="certifications-grid">
-        <!-- MERN Stack -->
-        <div class="certification-card reveal">
-            <div class="cert-image-wrap">
-                <img src="images/mern_stack.png" alt="MERN Stack Certificate" class="cert-img">
-                <div class="cert-img-overlay"></div>
-            </div>
-            <div class="cert-body">
-                <div class="certification-icon"><i class="fas fa-layer-group"></i></div>
-                <h3 class="certification-title">MERN Stack Development</h3>
-                <div class="certification-provider">
-                    <i class="fas fa-graduation-cap"></i> Broadway Infosys
-                </div>
-                <p class="certification-details">
-                    End-to-end full-stack training covering MongoDB, Express.js, React, and Node.js — 
-                    building production-grade web applications from day one.
-                </p>
-                <div class="cert-footer">
-                    <div class="certification-hours">
-                        <i class="fas fa-clock"></i> 135 Hours
+                    <div class="bento-gallery-dots">
+                        <span class="bdot active" onclick="bentoSwitch(this,0)"></span>
+                        <span class="bdot" onclick="bentoSwitch(this,1)"></span>
+                        <span class="bdot" onclick="bentoSwitch(this,2)"></span>
                     </div>
-                    <a href="https://broadwayinfosys.com/certificate-verification-code/eyJpdiI6IkdqbFdnU0JWTjFYUEpWbjg0dmhBM1E9PSIsInZhbHVlIjoiVWMxV2VEbVUvMkJZRVBpeVhscnk0dz09IiwibWFjIjoiMDczZmIzYzU5OGE0ZTdlMzgyZWQ5ODgzNzQ5ZDNhODg0MWVlZmI1Y2RjODcwN2M4MDdkNjQ0YmIwZjRhNTY0MyIsInRhZyI6IiJ9" target="_blank" class="cert-verify-btn">
-                        <i class="fas fa-shield-alt"></i> Verify Certificate
+                    <div class="bento-badge">FLAGSHIP PRODUCT</div>
+                </div>
+                <div class="bento-body">
+                    <div class="bento-meta">
+                        <span class="bento-num">01</span>
+                        <span class="bento-live-dot"></span>
+                        <span class="bento-status">Live · 25+ Municipalities</span>
+                    </div>
+                    <h3 class="bento-title">Palika GIS Platform</h3>
+                    <p class="bento-desc">
+                        Enterprise GIS platform I architected from scratch. Serves 25+ municipalities
+                        across Nepal, powers real-time emergency dispatch via Socket.io,
+                        algorithmic house numbering, road infrastructure mapping,
+                        and has processed 100K+ digital survey responses.
+                        Generated ₹2+ Crore in year one.
+                    </p>
+                    <div class="bento-highlights">
+                        <span><i class="fas fa-bolt"></i> Real-time Emergency System</span>
+                        <span><i class="fas fa-map-marked-alt"></i> PostGIS Spatial Analytics</span>
+                        <span><i class="fas fa-chart-line"></i> 100K+ Survey Responses</span>
+                    </div>
+                    <div class="bento-tech">
+                        <span>React</span><span>Node.js</span><span>PostgreSQL +
+                            PostGIS</span><span>Socket.io</span><span>Leaflet.js</span>
+                    </div>
+                    <a href="https://www.palikagis.com" target="_blank" class="bento-link">
+                        View Live Platform <i class="fas fa-external-link-alt"></i>
                     </a>
                 </div>
             </div>
-        </div>
 
-        <!-- Web Design -->
-        <div class="certification-card reveal">
-            <div class="cert-image-wrap">
-                <img src="images/web_design.png" alt="Web Design Certificate" class="cert-img">
-                <div class="cert-img-overlay"></div>
-            </div>
-            <div class="cert-body">
-                <div class="certification-icon"><i class="fas fa-paint-brush"></i></div>
-                <h3 class="certification-title">Front-End Web Development</h3>
-                <div class="certification-provider">
-                    <i class="fas fa-graduation-cap"></i> Broadway Infosys
-                </div>
-                <p class="certification-details">
-                    In-depth training in modern frontend development — HTML5, CSS3, JavaScript, 
-                    and responsive design principles for production-ready interfaces.
-                </p>
-                <div class="cert-footer">
-                    <div class="certification-hours">
-                        <i class="fas fa-clock"></i> 90 Hours
+            <!-- Tetra Labs -->
+            <div class="bento-card bento-half reveal">
+                <div class="bento-image-wrap short">
+                    <div class="bento-gallery-main">
+                        <div class="bento-gallery-image active"><img src="images/tetralabs1.png"
+                                alt="Tetra Labs Dashboard"></div>
+                        <div class="bento-gallery-image"><img src="images/tetralabs2.png" alt="Tetra Labs Report View">
+                        </div>
                     </div>
-                    <a href="https://broadwayinfosys.com/certificate-verification-code/eyJpdiI6IjdNL21HcTB5UTlLVERwbGlmNlVlbFE9PSIsInZhbHVlIjoicmFLdVFnUUpiMWxDMTFkTEM1MnlRQT09IiwibWFjIjoiNjE1ZDQyMmJkMGYzNTEwNmQzODU0OWM3MTc0YTFmOGJjYmNjZmRlODBmZjg1NTRmY2UzZTFjNzg4ZjUzNzM2NSIsInRhZyI6IiJ9" target="_blank" class="cert-verify-btn">
-                        <i class="fas fa-shield-alt"></i> Verify Certificate
+                    <div class="bento-gallery-dots">
+                        <span class="bdot active" onclick="bentoSwitch(this,0)"></span>
+                        <span class="bdot" onclick="bentoSwitch(this,1)"></span>
+                    </div>
+                    <div class="bento-badge secondary">SaaS PLATFORM</div>
+                </div>
+                <div class="bento-body">
+                    <div class="bento-meta">
+                        <span class="bento-num">02</span>
+                        <span class="bento-live-dot"></span>
+                        <span class="bento-status">Live</span>
+                    </div>
+                    <h3 class="bento-title">Tetra Labs</h3>
+                    <p class="bento-desc">
+                        Civil lab SaaS: automated workflow from test request → lab entry → report generation →
+                        stakeholder download portal, with full RBAC and GraphQL APIs.
+                    </p>
+                    <div class="bento-tech">
+                        <span>Next.js</span><span>TypeScript</span><span>GraphQL</span><span>PostgreSQL</span>
+                    </div>
+                    <a href="https://tetralabs.diginirmaan.com.np" target="_blank" class="bento-link">
+                        View Platform <i class="fas fa-external-link-alt"></i>
                     </a>
                 </div>
             </div>
-        </div>
 
-        <!-- C & C++ -->
-        <div class="certification-card reveal">
-            <div class="cert-image-wrap">
-                <img src="images/c_c_plus_plus.png" alt="C and C++ Certificate" class="cert-img">
-                <div class="cert-img-overlay"></div>
-            </div>
-            <div class="cert-body">
-                <div class="certification-icon"><i class="fas fa-memory"></i></div>
-                <h3 class="certification-title">C &amp; C++ Programming</h3>
-                <div class="certification-provider">
-                    <i class="fas fa-graduation-cap"></i> Broadway Infosys
-                </div>
-                <p class="certification-details">
-                    Core systems programming — memory management, pointers, data structures, 
-                    and low-level problem solving building strong computer science fundamentals.
-                </p>
-                <div class="cert-footer">
-                    <div class="certification-hours">
-                        <i class="fas fa-code"></i> Systems Programming
+            <!-- Municipal Platform -->
+            <div class="bento-card bento-half reveal">
+                <div class="bento-image-wrap short">
+                    <div class="bento-gallery-main">
+                        <div class="bento-gallery-image active"><img src="images/municipal1.png"
+                                alt="Municipal Platform"></div>
                     </div>
-                    <a href="https://broadwayinfosys.com/certificate-verification-code/eyJpdiI6Ik9ldlFXT1ZqdnpDZFY3LzQvYlhxbHc9PSIsInZhbHVlIjoiNGVzTk5GdW9rajM1c1RnVCt4SDI4Zz09IiwibWFjIjoiM2YzZDM5YzIzYWIwMGZlYzViZWVkNzMzODEzZjNkYmVhODc3NDkyY2Q4OWFjMTY3NGU0MmY2M2I3NDFlMTcyMCIsInRhZyI6IiJ9" target="_blank" class="cert-verify-btn">
-                        <i class="fas fa-shield-alt"></i> Verify Certificate
+                    <div class="bento-badge accent">MULTI-TENANT</div>
+                </div>
+                <div class="bento-body">
+                    <div class="bento-meta">
+                        <span class="bento-num">03</span>
+                        <span class="bento-live-dot"></span>
+                        <span class="bento-status">Live · Multiple Municipalities</span>
+                    </div>
+                    <h3 class="bento-title">Municipal Web Platform</h3>
+                    <p class="bento-desc">
+                        Modular, multi-tenant platform adopted by multiple municipalities —
+                        content management, events, employee directories, independently configurable per client.
+                    </p>
+                    <div class="bento-tech">
+                        <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+                    </div>
+                    <a href="https://lalitpur.palikagis.com" target="_blank" class="bento-link">
+                        View Live <i class="fas fa-external-link-alt"></i>
                     </a>
                 </div>
             </div>
+
+            <!-- Diginirmaan Website -->
+            <div class="bento-card bento-wide reveal">
+                <div class="bento-image-wrap side">
+                    <div class="bento-gallery-main">
+                        <div class="bento-gallery-image active"><img src="images/diginirmaan1.png"
+                                alt="Diginirmaan Website"></div>
+                    </div>
+                    <div class="bento-badge accent">COMPANY WEBSITE</div>
+                </div>
+                <div class="bento-body">
+                    <div class="bento-meta">
+                        <span class="bento-num">04</span>
+                        <span class="bento-live-dot"></span>
+                        <span class="bento-status">Live</span>
+                    </div>
+                    <h3 class="bento-title">Diginirmaan Official Website</h3>
+                    <p class="bento-desc">
+                        Company's flagship digital presence — designed and built from scratch.
+                        Showcases the full product portfolio, client testimonials, and services.
+                        Optimized for SEO and performance with Next.js and Tailwind CSS.
+                    </p>
+                    <div class="bento-tech">
+                        <span>React</span><span>Next.js</span><span>Tailwind CSS</span>
+                    </div>
+                    <a href="https://www.diginirmaan.com.np" target="_blank" class="bento-link">
+                        Visit Site <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="skills">
-    <div class="section-header reveal">
-        <span class="section-label">Expertise</span>
-        <h2 class="section-title">Skills &amp; Tools</h2>
-        <p class="section-description">
-            A battle-tested full-stack toolkit — built through real production systems, not tutorials
-        </p>
-    </div>
+    <section id="experience">
+        <div class="section-header reveal">
+            <span class="section-label">Career Journey</span>
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-description">
+                Building production systems that move the needle — from real-time emergency dispatch to enterprise SaaS
+            </p>
+        </div>
 
-    <div class="skills-container">
-        <div class="skills-grid">
-            <!-- Languages -->
-            <div class="skill-category reveal">
-                <div class="skill-header">
-                    <div class="skill-icon"><i class="fas fa-code"></i></div>
-                    <h3 class="skill-title">Languages</h3>
+        <div class="experience-container">
+            <div class="experience-timeline">
+                <!-- Experience 1 -->
+                <div class="experience-item reveal">
+                    <span class="experience-period">June 2024 – Present</span>
+                    <h3 class="experience-title">Lead Full Stack Developer</h3>
+                    <div class="experience-company">Diginirman</div>
+                    <div class="experience-location">
+                        <i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal
+                    </div>
+                    <ul class="experience-achievements">
+                        <li>Architected <strong>Palika GIS</strong> (palikagis.com) from the ground up — now deployed
+                            across 25+ municipalities and generating ₹2+ Crore in year one revenue</li>
+                        <li>Engineered a real-time Emergency Management System using Socket.io — live GPS coordinates,
+                            severity triage, and media uploads enabling immediate municipal response</li>
+                        <li>Built a Digital Survey pipeline with live logging and batch processing for 100K+ responses,
+                            featuring a WebSocket download system and auto Dropbox backup with monitoring</li>
+                        <li>Developed a House Numbering System using proximity algorithms to auto-generate metric number
+                            plates from municipal road networks, visualized on the GIS interface</li>
+                        <li>Implemented PostGIS spatial filters, database caching for computed stats, and a
+                            collaborative land-zone recommendation engine with multi-party live commenting</li>
+                        <li>Designed and developed the <strong>Diginirmaan Official Website</strong> — establishing the
+                            company's digital presence and showcasing the full product portfolio</li>
+                    </ul>
                 </div>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fas fa-code"></i></div>
-                        <span class="skill-item-name">TypeScript</span>
-                        <span class="skill-level">Expert</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fab fa-js"></i></div>
-                        <span class="skill-item-name">JavaScript</span>
-                        <span class="skill-level">Expert</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fab fa-python"></i></div>
-                        <span class="skill-item-name">Python</span>
-                        <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fas fa-database"></i></div>
-                        <span class="skill-item-name">SQL</span>
-                        <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fas fa-memory"></i></div>
-                        <span class="skill-item-name">C / C++</span>
-                        <span class="skill-level">Intermediate</span>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Frontend -->
-            <div class="skill-category reveal">
-                <div class="skill-header">
-                    <div class="skill-icon"><i class="fab fa-react"></i></div>
-                    <h3 class="skill-title">Frontend</h3>
-                </div>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fab fa-react"></i></div>
-                        <span class="skill-item-name">React.js</span>
-                        <span class="skill-level">Expert</span>
+                <!-- Experience 2 -->
+                <div class="experience-item reveal">
+                    <span class="experience-period">May 2024 – June 2024</span>
+                    <h3 class="experience-title">Full Stack Developer</h3>
+                    <div class="experience-company">Information Care</div>
+                    <div class="experience-location">
+                        <i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fas fa-layer-group"></i></div>
-                        <span class="skill-item-name">Next.js</span>
-                        <span class="skill-level">Expert</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fas fa-store"></i></div>
-                        <span class="skill-item-name">Redux</span>
-                        <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fas fa-paint-brush"></i></div>
-                        <span class="skill-item-name">Tailwind CSS</span>
-                        <span class="skill-level">Expert</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Backend -->
-            <div class="skill-category reveal">
-                <div class="skill-header">
-                    <div class="skill-icon"><i class="fas fa-server"></i></div>
-                    <h3 class="skill-title">Backend</h3>
-                </div>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fab fa-node-js"></i></div>
-                        <span class="skill-item-name">Node.js</span>
-                        <span class="skill-level">Expert</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fas fa-project-diagram"></i></div>
-                        <span class="skill-item-name">GraphQL</span>
-                        <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fas fa-bolt"></i></div>
-                        <span class="skill-item-name">Socket.io / WebSockets</span>
-                        <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fas fa-exchange-alt"></i></div>
-                        <span class="skill-item-name">RESTful APIs</span>
-                        <span class="skill-level">Expert</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Databases & Tools -->
-            <div class="skill-category reveal">
-                <div class="skill-header">
-                    <div class="skill-icon"><i class="fas fa-database"></i></div>
-                    <h3 class="skill-title">Databases &amp; Tools</h3>
-                </div>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fas fa-database"></i></div>
-                        <span class="skill-item-name">PostgreSQL + PostGIS</span>
-                        <span class="skill-level">Expert</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fas fa-leaf"></i></div>
-                        <span class="skill-item-name">MongoDB</span>
-                        <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fab fa-docker"></i></div>
-                        <span class="skill-item-name">Docker</span>
-                        <span class="skill-level">Intermediate</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-item-icon"><i class="fab fa-aws"></i></div>
-                        <span class="skill-item-name">AWS / DigitalOcean</span>
-                        <span class="skill-level">Intermediate</span>
-                    </div>
+                    <ul class="experience-achievements">
+                        <li>Delivered production-ready RESTful APIs and GraphQL schemas using TypeScript, PostgreSQL,
+                            and TypeORM for enterprise-grade applications</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
- 
+    <!-- ===== EDUCATION ===== -->
+    <section id="education">
+        <div class="section-header reveal">
+            <span class="section-label">Academics</span>
+            <h2 class="section-title">Education</h2>
+            <p class="section-description">
+                Top-ranked institutions · Gold Medal · 9.72 GPA
+            </p>
+        </div>
+
+        <div class="education-container">
+            <!-- NIT Rourkela -->
+            <div class="education-card reveal">
+                <div class="education-image-wrap">
+                    <img src="images/nit_rourkela.png" alt="National Institute of Technology, Rourkela"
+                        class="edu-college-img">
+
+                </div>
+                <div class="education-content">
+                    <div class="education-flag">
+                        <span class="edu-degree-label">POST GRADUATE</span>
+                    </div>
+                    <h3 class="education-degree">M.Tech in Computer Science &amp; Engineering</h3>
+                    <div class="education-institution">National Institute of Technology, Rourkela</div>
+                    <div class="education-info">
+                        <span class="education-year">
+                            <i class="fas fa-calendar-alt"></i> Aug 2025 – Aug 2027
+                        </span>
+                        <span class="education-location">
+                            <i class="fas fa-map-marker-alt"></i> Rourkela, Odisha
+                        </span>
+                    </div>
+                    <p class="education-detail">One of India's premier engineering institutions (NIT system). Pursuing
+                        advanced studies in CS with focus on algorithms, system design, and scalable architectures.</p>
+                </div>
+            </div>
+
+            <!-- VIT Vellore -->
+            <div class="education-card reveal">
+                <div class="education-image-wrap">
+                    <img src="images/vit_vellore.png" alt="Vellore Institute of Technology" class="edu-college-img">
+
+                </div>
+                <div class="education-content">
+                    <div class="education-flag">
+                        <span class="edu-degree-label">UNDER GRADUATE</span>
+                        <span class="edu-gold-badge"><i class="fas fa-medal"></i> Gold Medalist</span>
+                    </div>
+                    <h3 class="education-degree">B.Sc. in Computer Science</h3>
+                    <div class="education-institution">Vellore Institute of Technology</div>
+                    <div class="education-info">
+                        <span class="education-year">
+                            <i class="fas fa-calendar-alt"></i> Aug 2021 – May 2024
+                        </span>
+                        <span class="education-location">
+                            <i class="fas fa-map-marker-alt"></i> Vellore, Tamil Nadu
+                        </span>
+                    </div>
+                    <div class="edu-gpa-wrap">
+                        <div class="edu-gpa">
+                            <span class="gpa-num">9.72</span>
+                            <span class="gpa-label">/ 10 GPA</span>
+                        </div>
+                        <p class="edu-gpa-note">Graduated with highest distinction &amp; Gold Medal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS ===== -->
+    <section id="certifications">
+        <div class="section-header reveal">
+            <span class="section-label">Credentials</span>
+            <h2 class="section-title">Certifications</h2>
+            <p class="section-description">
+                Verified professional training — 225+ hours of hands-on coursework
+            </p>
+        </div>
+
+        <div class="certifications-grid">
+            <!-- MERN Stack -->
+            <div class="certification-card reveal">
+                <div class="cert-image-wrap">
+                    <img src="images/mern_stack.png" alt="MERN Stack Certificate" class="cert-img">
+                    <div class="cert-img-overlay"></div>
+                </div>
+                <div class="cert-body">
+                    <div class="certification-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3 class="certification-title">MERN Stack Development</h3>
+                    <div class="certification-provider">
+                        <i class="fas fa-graduation-cap"></i> Broadway Infosys
+                    </div>
+                    <p class="certification-details">
+                        End-to-end full-stack training covering MongoDB, Express.js, React, and Node.js —
+                        building production-grade web applications from day one.
+                    </p>
+                    <div class="cert-footer">
+                        <div class="certification-hours">
+                            <i class="fas fa-clock"></i> 135 Hours
+                        </div>
+                        <a href="https://broadwayinfosys.com/certificate-verification-code/eyJpdiI6IkdqbFdnU0JWTjFYUEpWbjg0dmhBM1E9PSIsInZhbHVlIjoiVWMxV2VEbVUvMkJZRVBpeVhscnk0dz09IiwibWFjIjoiMDczZmIzYzU5OGE0ZTdlMzgyZWQ5ODgzNzQ5ZDNhODg0MWVlZmI1Y2RjODcwN2M4MDdkNjQ0YmIwZjRhNTY0MyIsInRhZyI6IiJ9"
+                            target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-shield-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Design -->
+            <div class="certification-card reveal">
+                <div class="cert-image-wrap">
+                    <img src="images/web_design.png" alt="Web Design Certificate" class="cert-img">
+                    <div class="cert-img-overlay"></div>
+                </div>
+                <div class="cert-body">
+                    <div class="certification-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3 class="certification-title">Front-End Web Development</h3>
+                    <div class="certification-provider">
+                        <i class="fas fa-graduation-cap"></i> Broadway Infosys
+                    </div>
+                    <p class="certification-details">
+                        In-depth training in modern frontend development — HTML5, CSS3, JavaScript,
+                        and responsive design principles for production-ready interfaces.
+                    </p>
+                    <div class="cert-footer">
+                        <div class="certification-hours">
+                            <i class="fas fa-clock"></i> 90 Hours
+                        </div>
+                        <a href="https://broadwayinfosys.com/certificate-verification-code/eyJpdiI6IjdNL21HcTB5UTlLVERwbGlmNlVlbFE9PSIsInZhbHVlIjoicmFLdVFnUUpiMWxDMTFkTEM1MnlRQT09IiwibWFjIjoiNjE1ZDQyMmJkMGYzNTEwNmQzODU0OWM3MTc0YTFmOGJjYmNjZmRlODBmZjg1NTRmY2UzZTFjNzg4ZjUzNzM2NSIsInRhZyI6IiJ9"
+                            target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-shield-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C & C++ -->
+            <div class="certification-card reveal">
+                <div class="cert-image-wrap">
+                    <img src="images/c_c_plus_plus.png" alt="C and C++ Certificate" class="cert-img">
+                    <div class="cert-img-overlay"></div>
+                </div>
+                <div class="cert-body">
+                    <div class="certification-icon"><i class="fas fa-memory"></i></div>
+                    <h3 class="certification-title">C &amp; C++ Programming</h3>
+                    <div class="certification-provider">
+                        <i class="fas fa-graduation-cap"></i> Broadway Infosys
+                    </div>
+                    <p class="certification-details">
+                        Core systems programming — memory management, pointers, data structures,
+                        and low-level problem solving building strong computer science fundamentals.
+                    </p>
+                    <div class="cert-footer">
+                        <div class="certification-hours">
+                            <i class="fas fa-code"></i> Systems Programming
+                        </div>
+                        <a href="https://broadwayinfosys.com/certificate-verification-code/eyJpdiI6Ik9ldlFXT1ZqdnpDZFY3LzQvYlhxbHc9PSIsInZhbHVlIjoiNGVzTk5GdW9rajM1c1RnVCt4SDI4Zz09IiwibWFjIjoiM2YzZDM5YzIzYWIwMGZlYzViZWVkNzMzODEzZjNkYmVhODc3NDkyY2Q4OWFjMTY3NGU0MmY2M2I3NDFlMTcyMCIsInRhZyI6IiJ9"
+                            target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-shield-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-header reveal">
+            <span class="section-label">Expertise</span>
+            <h2 class="section-title">Skills &amp; Tools</h2>
+            <p class="section-description">
+                A battle-tested full-stack toolkit — built through real production systems, not tutorials
+            </p>
+        </div>
+
+        <div class="skills-container">
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category reveal">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3 class="skill-title">Languages</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fas fa-code"></i></div>
+                            <span class="skill-item-name">TypeScript</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fab fa-js"></i></div>
+                            <span class="skill-item-name">JavaScript</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fab fa-python"></i></div>
+                            <span class="skill-item-name">Python</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fas fa-database"></i></div>
+                            <span class="skill-item-name">SQL</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fas fa-memory"></i></div>
+                            <span class="skill-item-name">C / C++</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-category reveal">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <h3 class="skill-title">Frontend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fab fa-react"></i></div>
+                            <span class="skill-item-name">React.js</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fas fa-layer-group"></i></div>
+                            <span class="skill-item-name">Next.js</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fas fa-store"></i></div>
+                            <span class="skill-item-name">Redux</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fas fa-paint-brush"></i></div>
+                            <span class="skill-item-name">Tailwind CSS</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category reveal">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <h3 class="skill-title">Backend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fab fa-node-js"></i></div>
+                            <span class="skill-item-name">Node.js</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fas fa-project-diagram"></i></div>
+                            <span class="skill-item-name">GraphQL</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fas fa-bolt"></i></div>
+                            <span class="skill-item-name">Socket.io / WebSockets</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fas fa-exchange-alt"></i></div>
+                            <span class="skill-item-name">RESTful APIs</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases & Tools -->
+                <div class="skill-category reveal">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3 class="skill-title">Databases &amp; Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fas fa-database"></i></div>
+                            <span class="skill-item-name">PostgreSQL + PostGIS</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fas fa-leaf"></i></div>
+                            <span class="skill-item-name">MongoDB</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fab fa-docker"></i></div>
+                            <span class="skill-item-name">Docker</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="fab fa-aws"></i></div>
+                            <span class="skill-item-name">AWS / DigitalOcean</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section id="contact">
         <div class="section-header reveal">
             <span class="section-label">Get In Touch</span>
             <h2 class="section-title">Let's Work Together</h2>
             <p class="section-description">
-                Open to Full Stack Engineer opportunities and exciting collaborations. Let's build something extraordinary.
+                Open to Full Stack Engineer opportunities and exciting collaborations. Let's build something
+                extraordinary.
             </p>
         </div>
 
@@ -628,7 +647,7 @@
                     <p>+91 70915 17943</p>
                 </a>
 
-              
+
             </div>
 
             <div class="social-links reveal">
@@ -638,7 +657,7 @@
                 <a href="https://github.com/HariKrishnaShah" target="_blank" class="social-link">
                     <i class="fab fa-github"></i>
                 </a>
-               
+
                 <a href="mailto:hksshah111@gmail.com" class="social-link">
                     <i class="fas fa-envelope"></i>
                 </a>
@@ -650,6 +669,7 @@
         <p>&copy; 2026 Hari Shah · Designed &amp; Built by Hari Krishna Shah</p>
     </footer>
 
- <script src="./js.js"></script>
+    <script src="./js.js"></script>
 </body>
+
 </html>
