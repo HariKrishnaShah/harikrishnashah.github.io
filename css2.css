@@ -2739,7 +2739,7 @@ footer p {
     }
 
     .cac-value {
-        font-size: 0.7rem !important;
+        font-size: 0.85rem !important;
         word-break: break-all;
         overflow-wrap: anywhere;
         white-space: normal;
@@ -2787,7 +2787,7 @@ footer p {
     }
 
     .cac-value {
-        font-size: 0.6rem !important;
+        font-size: 12px !important;
     }
 
     .csocial {
