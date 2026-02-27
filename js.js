@@ -141,7 +141,7 @@ setInterval(autoRotateImages, 4000);
 // Open CV in new tab
 function downloadCV() {
   const link = document.createElement("a");
-  link.href = "images/Harikrishna_Shah_Resume.pdf";
+  link.href = "Harikrishna_Shah_Resume.pdf";
   link.target = "_blank";
   link.rel = "noopener noreferrer";
   document.body.appendChild(link);
