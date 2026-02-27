@@ -2714,7 +2714,7 @@ footer p {
 
     .cac-value {
         font-size: 0.88rem;
-        word-break: break-word;
+        word-break: break-all;
         overflow-wrap: anywhere;
     }
 
@@ -2735,5 +2735,28 @@ footer p {
     .csocial.resume {
         flex: 1 1 100%;
         margin-top: 0.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-cta-title {
+        font-size: 1.45rem;
+    }
+
+    .contact-cta-sub {
+        font-size: 0.88rem;
+    }
+
+    .cac-label {
+        font-size: 0.7rem;
+    }
+
+    .cac-value {
+        font-size: 0.8rem;
+    }
+
+    .csocial {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
     }
 }
