@@ -12,7 +12,7 @@ document.addEventListener("mousemove", (e) => {
   }, 100);
 });
 
-document.querySelectorAll("a, button, .thumbnail").forEach((el) => {
+document.querySelectorAll("a, button, .thumbnail, .bdot").forEach((el) => {
   el.addEventListener("mouseenter", () => {
     cursor.style.transform = "translate(-50%, -50%) scale(1.5)";
     cursorFollower.style.transform = "translate(-50%, -50%) scale(1.5)";
@@ -49,7 +49,45 @@ const revealOnScroll = () => {
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
 
-// Auto-rotate project images
+// ===== BENTO GALLERY SWITCH =====
+function bentoSwitch(dotEl, index) {
+  const card = dotEl.closest(".bento-card");
+  const images = card.querySelectorAll(".bento-gallery-image");
+  const dots = card.querySelectorAll(".bdot");
+
+  images.forEach((img, i) => {
+    img.classList.toggle("active", i === index);
+  });
+  dots.forEach((d, i) => {
+    d.classList.toggle("active", i === index);
+  });
+}
+
+// Auto-rotate bento galleries
+const autoRotateBento = () => {
+  document.querySelectorAll(".bento-card").forEach((card) => {
+    const images = card.querySelectorAll(".bento-gallery-image");
+    const dots = card.querySelectorAll(".bdot");
+    if (images.length < 2) return;
+
+    let currentIndex = 0;
+    images.forEach((img, i) => {
+      if (img.classList.contains("active")) currentIndex = i;
+    });
+
+    const nextIndex = (currentIndex + 1) % images.length;
+
+    images.forEach((img) => img.classList.remove("active"));
+    dots.forEach((d) => d.classList.remove("active"));
+
+    images[nextIndex].classList.add("active");
+    if (dots[nextIndex]) dots[nextIndex].classList.add("active");
+  });
+};
+
+setInterval(autoRotateBento, 4500);
+
+// Legacy: Auto-rotate project images (old .project-card system – kept for fallback)
 const autoRotateImages = () => {
   document.querySelectorAll(".project-card").forEach((card) => {
     const images = card.querySelectorAll(".gallery-image");
@@ -109,6 +147,8 @@ window.addEventListener("scroll", () => {
     orb.style.transform = `translateY(${scrolled * speed}px)`;
   });
 });
+
+// Legacy thumbnail init
 function initThumbnails() {
   document.querySelectorAll(".project-card").forEach((card) => {
     const images = card.querySelectorAll(".gallery-image");
@@ -118,13 +158,11 @@ function initThumbnails() {
       const thumb = thumbnails[index];
       if (!thumb) return;
 
-      // Clear existing content
       thumb.innerHTML = "";
 
       const imgTag = imageDiv.querySelector("img");
 
       if (imgTag) {
-        // Create thumbnail img
         const thumbImg = document.createElement("img");
         thumbImg.src = imgTag.src;
         thumbImg.alt = imgTag.alt || `Thumbnail ${index + 1}`;
@@ -134,7 +172,6 @@ function initThumbnails() {
         thumbImg.style.borderRadius = "8px";
         thumb.appendChild(thumbImg);
       } else {
-        // fallback for emoji/text slides
         thumb.textContent = imageDiv.textContent;
       }
     });
