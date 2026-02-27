@@ -2662,7 +2662,7 @@ footer p {
 
 @media (max-width: 600px) {
     .skill-row {
-        padding: 1.2rem 1.5rem;
+        padding: 1.2rem 1.1rem;
         flex-direction: column;
         align-items: flex-start;
         gap: 0.8rem;
@@ -2672,24 +2672,33 @@ footer p {
         min-width: auto;
     }
 
-    .contact-cta-left,
+    .contact-cta-wrap {
+        border-radius: 20px;
+    }
+
+    .contact-cta-left {
+        padding: 2.5rem 1.25rem 1.5rem;
+    }
+
     .contact-cta-right {
-        padding: 2.5rem 1.25rem;
+        padding: 0.5rem 1.25rem 2.5rem;
     }
 
     .contact-cta-title {
-        font-size: 1.75rem;
+        font-size: 1.65rem;
         letter-spacing: -0.5px;
     }
 
     .contact-cta-sub {
         font-size: 0.95rem;
         line-height: 1.6;
+        color: rgba(248, 250, 252, 0.7);
     }
 
     .contact-action-card {
         padding: 1rem;
         gap: 0.75rem;
+        width: 100%;
     }
 
     .cac-icon {
@@ -2699,23 +2708,32 @@ footer p {
         border-radius: 10px;
     }
 
+    .cac-text {
+        overflow: hidden;
+    }
+
     .cac-value {
-        font-size: 0.9rem;
+        font-size: 0.88rem;
+        word-break: break-word;
+        overflow-wrap: anywhere;
     }
 
     .contact-socials {
-        gap: 0.5rem;
+        gap: 0.6rem;
         justify-content: center;
+        margin-top: 0.4rem;
     }
 
     .csocial {
-        padding: 0.5rem 1rem;
+        padding: 0.6rem 0.8rem;
         font-size: 0.8rem;
-        flex: 1 1 calc(50% - 0.5rem);
+        flex: 1 1 calc(50% - 0.3rem);
         justify-content: center;
+        min-width: 100px;
     }
 
     .csocial.resume {
         flex: 1 1 100%;
+        margin-top: 0.2rem;
     }
 }
