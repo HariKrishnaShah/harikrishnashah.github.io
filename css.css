@@ -2586,7 +2586,7 @@ footer p {
 }
 
 .cac-value {
-    font-size: 1rem;
+    font-size: 2px !important;
     font-weight: 600;
     color: var(--light);
     margin-top: 0.15rem;
@@ -2739,7 +2739,7 @@ footer p {
     }
 
     .cac-value {
-        font-size: 8px;
+        font-size: 2px !important;
         word-break: break-all;
         overflow-wrap: anywhere;
         white-space: normal;
@@ -2787,7 +2787,7 @@ footer p {
     }
 
     .cac-value {
-        font-size: 8px;
+        font-size: 2px !important;
     }
 
     .csocial {
