@@ -1,4 +1,30 @@
-// Custom Cursor
+// ===== HAMBURGER NAV =====
+const navBurger = document.getElementById('navBurger');
+const mainNav = document.getElementById('main-nav');
+const navMenu = document.getElementById('navMenu');
+
+function closeNav() {
+  mainNav.classList.remove('menu-open');
+  navBurger.classList.remove('open');
+}
+
+navBurger.addEventListener('click', (e) => {
+  e.stopPropagation();
+  const isOpen = mainNav.classList.toggle('menu-open');
+  navBurger.classList.toggle('open', isOpen);
+});
+
+// Close on link click
+navMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', closeNav);
+});
+
+// Close when clicking outside
+document.addEventListener('click', (e) => {
+  if (!mainNav.contains(e.target)) closeNav();
+});
+
+// ===== CUSTOM CURSOR =====
 const cursor = document.querySelector(".cursor");
 const cursorFollower = document.querySelector(".cursor-follower");
 
