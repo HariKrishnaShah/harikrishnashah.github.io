@@ -1,0 +1,22 @@
+# robots.txt for https://harishah.com.np/
+# Generated for optimal SEO
+
+User-agent: *
+Allow: /
+
+# Block irrelevant assets from crawling (saves crawl budget)
+Disallow: /*.css$
+Disallow: /*.js$
+
+# Allow specific bots full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://harishah.com.np/sitemap.xml
