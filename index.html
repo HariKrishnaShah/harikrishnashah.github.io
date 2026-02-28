@@ -146,6 +146,8 @@
                                 alt="Palika GIS Road Infrastructure" loading="lazy"></div>
                         <div class="bento-gallery-image"><img src="images/palikagis_digitalprofile.png"
                                 alt="Palika GIS Digital Profile" loading="lazy"></div>
+                        <div class="bento-gallery-image"><img src="images/palikagis_emergency_system.png"
+                                alt="Palika GIS Emergency System" loading="lazy"></div>
                     </div>
                     <div class="bento-gallery-dots">
                         <span class="bdot active" onclick="bentoSwitch(this,0)"></span>
@@ -155,6 +157,7 @@
                         <span class="bdot" onclick="bentoSwitch(this,4)"></span>
                         <span class="bdot" onclick="bentoSwitch(this,5)"></span>
                         <span class="bdot" onclick="bentoSwitch(this,6)"></span>
+                        <span class="bdot" onclick="bentoSwitch(this,7)"></span>
                     </div>
 
                 </div>
@@ -166,17 +169,66 @@
                     </div>
                     <h3 class="bento-title">Palika GIS Platform</h3>
                     <p class="bento-desc">
-                        Enterprise GIS platform I architected from scratch. Serves 25+ municipalities
-                        across Nepal, powers real-time emergency dispatch via Socket.io,
-                        algorithmic house numbering, road infrastructure mapping,
-                        and has processed 100K+ digital survey responses.
-                        Generated ₹2+ Crore in year one.
+                        Enterprise GIS platform architected from scratch — serving 25+ municipalities across Nepal.
+                        Powers real-time emergency dispatch, algorithmic addressing, full road infrastructure mapping,
+                        geo-tagged digital surveys, and cadastral land management. Processed 100K+ survey responses.
+                        Generated <strong style="color: var(--light);">₹2+ Crore in year one.</strong>
                     </p>
-                    <div class="bento-highlights">
-                        <span><i class="fas fa-bolt"></i> Real-time Emergency System</span>
-                        <span><i class="fas fa-map-marked-alt"></i> PostGIS Spatial Analytics</span>
-                        <span><i class="fas fa-chart-line"></i> 100K+ Survey Responses</span>
+
+                    <!-- Module Grid -->
+                    <div class="module-grid">
+                        <div class="module-item">
+                            <div class="module-icon"><i class="fas fa-bolt"></i></div>
+                            <div class="module-text">
+                                <span class="module-name">Emergency Management</span>
+                                <span class="module-desc">Residents report fire, damage & crises via GPS + media. Live
+                                    Socket.io dashboard enables immediate municipal response.</span>
+                            </div>
+                        </div>
+                        <div class="module-item">
+                            <div class="module-icon"><i class="fas fa-hashtag"></i></div>
+                            <div class="module-text">
+                                <span class="module-name">House Numbering</span>
+                                <span class="module-desc">Algorithmic metric plate generation based on road proximity.
+                                    GIS-visualized addressing for entire municipalities.</span>
+                            </div>
+                        </div>
+                        <div class="module-item">
+                            <div class="module-icon"><i class="fas fa-road"></i></div>
+                            <div class="module-text">
+                                <span class="module-name">Road Visualization</span>
+                                <span class="module-desc">Full road network mapped with type, length, width, drainage &
+                                    pavement — powering infrastructure planning & maintenance.</span>
+                            </div>
+                        </div>
+                        <div class="module-item">
+                            <div class="module-icon"><i class="fas fa-users"></i></div>
+                            <div class="module-text">
+                                <span class="module-name">Digital Profile</span>
+                                <span class="module-desc">Filter and visualize on map 50+ demographics — caste,
+                                    language, disease, vehicle.
+                                    Auto-generates ward & tole-level reports for administration.</span>
+                            </div>
+                        </div>
+                        <div class="module-item">
+                            <div class="module-icon"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="module-text">
+                                <span class="module-name">Digital Survey</span>
+                                <span class="module-desc">Custom surveys collected via mobile app with geo-tagged
+                                    houses. Live logging, batch processing, WebSocket downloads & auto Dropbox
+                                    backup.</span>
+                            </div>
+                        </div>
+                        <div class="module-item">
+                            <div class="module-icon"><i class="fas fa-map"></i></div>
+                            <div class="module-text">
+                                <span class="module-name">Land Management</span>
+                                <span class="module-desc">Full cadastral visualization of municipal land parcels with
+                                    AI-powered recommendations for official land-use decisions.</span>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="bento-tech">
                         <span>React</span><span>Node.js</span><span>PostgreSQL +
                             PostGIS</span><span>Socket.io</span><span>Leaflet.js</span>
